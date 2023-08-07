@@ -80,7 +80,7 @@ theme:
 
 # Plugins
 plugins:
-  - macros
+  - macros:
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
@@ -133,7 +133,7 @@ extra:
     provider: google
     property: G-JT9BRCXKJJ
     feedback:
-      title: 喜欢我的请给小心心
+      title: 喜欢我 请给小心心
       ratings:
         - icon: material/heart
           name: 喜欢你
@@ -146,6 +146,9 @@ extra:
           note: >-
             扎心呜呜呜
 
+extra_css:
+  - css/extra.css
+  - css/status.css
 
 # Page tree
 nav:
