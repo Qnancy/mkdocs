@@ -1,6 +1,6 @@
 # Project information
 site_name: Qnancy's world
-site_url: https://github.com/Qnancy/mkdocs
+site_url: https://Qnancy.github.io/mkdocs
 site_author: Qnancy
 
 # Repository
@@ -147,8 +147,8 @@ extra:
             扎心呜呜呜
 
 extra_css:
-  - css/extra.css
-  - css/status.css
+  - 'css/extra.css'
+  - 'css/status.css'
 
 # Page tree
 nav:
