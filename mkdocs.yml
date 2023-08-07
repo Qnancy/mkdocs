@@ -6,7 +6,7 @@ site_author: Qnancy
 # Repository
 repo_name: Qnancy/mkdocs
 repo_url: https://github.com/Qnancy/mkdocs
-
+edit_uri: tree/main/docs
 
 # Copyright
 copyright: Copyright &copy; 2023 - 2024 Qnancy
@@ -15,13 +15,14 @@ theme:
   name: material
 
   features:
+    - admonition
     - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.code.select
-    # - content.tabs.linkq
+    # - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
@@ -55,7 +56,7 @@ theme:
         name: Switch to light mode
 
   font:
-    text: Roboto
+    text: Noto Serif SC
     code: Roboto Mono
 
   icon:
@@ -75,65 +76,78 @@ theme:
 
   language: zh # 一些提示性的文字会变成中文
 
-  # Plugins
-  plugins:
-    - search:
-        separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-    - minify:
-        minify_html: true
-    - statistics
-    - glightbox
-    - git-revision-date-localized:
-        type: datetime
-        timezone: Asia/Shanghai
-        locale: zh
-        enable_creation_date: true
+  custom_dir: overrides
+
+# Plugins
+plugins:
+  - macros
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - statistics
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  analytics:
+    provider: google
+    property: G-JT9BRCXKJJ
+    feedback:
+      title: 喜欢我的请给小心心
+      ratings:
+        - icon: material/heart
+          name: 喜欢你
+          data: 1
+          note: >-
+            爱你~
+        - icon: material/heart-broken
+          name: 不喜欢
+          data: 0
+          note: >-
+            扎心呜呜呜
 
 
-  # Extensions
-  markdown_extensions:
-    - abbr
-    - admonition
-    - attr_list
-    - def_list
-    - footnotes
-    - md_in_html
-    - toc:
-        permalink: true
-    - pymdownx.arithmatex:
-        generic: true
-    - pymdownx.betterem:
-        smart_enable: all
-    - pymdownx.caret
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-        emoji_index: !!python/name:materialx.emoji.twemoji
-    - pymdownx.highlight:
-        anchor_linenums: true
-        line_spans: __span
-        pygments_lang_class: true
-    - pymdownx.inlinehilite
-    - pymdownx.keys
-    - pymdownx.magiclink:
-        repo_url_shorthand: true
-        user: squidfunk
-        repo: mkdocs-material
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences:
-        custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.tabbed:
-        alternate_style: true
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.tilde
-
-  # Page tree
-
+# Page tree
 nav:
   - "扉页":
       - "扉页": index.md

@@ -1,17 +1,22 @@
-# Welcome to MkDocs
+---
+hide:
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+# Nice to meet you.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Welcome to {{ config.site_name }}!
+### 这是想了这么久终于动工的小世界！
 
-## Project layout
+??? example
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? info "统计！"
+
+    页面数：{{pages}}
+    总字数：{{words}} 
+
