@@ -1,7 +1,5 @@
 ---
-comments: false
 statistics: True
-  
 ---
 
 # Nice to meet you.
