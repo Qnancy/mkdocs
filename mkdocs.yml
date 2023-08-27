@@ -147,8 +147,7 @@ extra:
             扎心呜呜呜
 
 extra_css:
-  - 'css/extra.css'
-  - 'css/status.css'
+  - stylesheets/extra.css
 
 # Page tree
 nav:
