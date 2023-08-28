@@ -157,7 +157,7 @@ nav:
   - 学堂课业:
       - 数据结构: course/ds.md
   - 善事利器:
-      - git: tool/git.md
+      - Git: tool/git/git.md
   - 诗和远方:
       - 旅行: poetry/travel/szbh.md
   - 随记:
