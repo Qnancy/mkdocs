@@ -112,8 +112,8 @@ li {
     --md-accent-fg-color--transparent: rgba(82, 108, 254, .1);
     --md-accent-bg-color: #fff;
     --md-accent-bg-color--light: hsla(0, 0%, 100%, .7);
-    --md-code-fg-color: #66806A;
-    --md-code-bg-color: #FFF3E4;
+    --md-code-fg-color: #112D4E;
+    --md-code-bg-color: #EEE9E9;
     --md-code-hl-color: rgba(255, 255, 0, .5);
     --md-code-hl-number-color: #d52a2a;
     --md-code-hl-special-color: #db1457;
@@ -137,7 +137,7 @@ li {
     --md-typeset-kbd-border-color: #b8b8b8;
     --md-typeset-table-color: rgba(0, 0, 0, .12);
     --md-admonition-fg-color: var(--md-default-fg-color);
-    --md-admonition-bg-color: #fff9f4;
+    --md-admonition-bg-color: #F9F7F7;
     --md-footer-fg-color: #fff;
     --md-footer-fg-color--light: hsla(0, 0%, 100%, .7);
     --md-footer-fg-color--lighter: hsla(0, 0%, 100%, .3);
